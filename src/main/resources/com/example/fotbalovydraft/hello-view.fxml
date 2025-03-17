@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fotbalovydraft.HelloController">
+   <children>
+      <Label text="Seznam hráčů" />
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <ListView fx:id="listView" prefHeight="110.0" prefWidth="288.0" />
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Button mnemonicParsing="false" text="Přidat hráče" />
+                  <Button mnemonicParsing="false" text="Upravit hráče" />
+                  <Button mnemonicParsing="false" onAction="#deletePlayer" text="Smazat hráče" />
+                  <Button mnemonicParsing="false" text="Zobrazit hráče" />
+               </children>
+            </VBox>
+            <Label text="Label" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
