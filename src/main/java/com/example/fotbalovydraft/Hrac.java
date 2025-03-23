@@ -13,17 +13,31 @@ public class Hrac {
 
     @Override
     public String toString() {
-        return name + "" + pozice;
+        return name + " " + pozice;
     }
+
+
     public String getName() {
         return name;
     }
 
-    public String getPozice() {
+    public Pozice getPozice() {
         return pozice;
     }
 
     public int getHodnoceni() {
         return hodnoceni;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setPozice(Pozice pozice) {
+        this.pozice = pozice;
+    }
+
+    public void setHodnoceni(int hodnoceni) {
+        this.hodnoceni = hodnoceni;
     }
 }

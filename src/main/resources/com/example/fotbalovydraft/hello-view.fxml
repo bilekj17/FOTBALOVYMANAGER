@@ -11,14 +11,14 @@
             <ListView fx:id="listView" prefHeight="110.0" prefWidth="288.0" />
             <VBox prefHeight="200.0" prefWidth="100.0">
                <children>
-                  <Button mnemonicParsing="false" text="Přidat hráče" />
-                  <Button mnemonicParsing="false" text="Upravit hráče" />
+                  <Button mnemonicParsing="false" onAction="#addPlayer" text="Přidat hráče" />
+                  <Button mnemonicParsing="false" onAction="#editPlayer" text="Upravit hráče" />
                   <Button mnemonicParsing="false" onAction="#deletePlayer" text="Smazat hráče" />
-                  <Button mnemonicParsing="false" text="Zobrazit hráče" />
+                  <Button mnemonicParsing="false" onAction="#showPlayer" text="Zobrazit hráče" />
                </children>
             </VBox>
-            <Label text="Label" />
          </children>
       </HBox>
+      <Label fx:id="informace" text="informace:" />
    </children>
 </VBox>

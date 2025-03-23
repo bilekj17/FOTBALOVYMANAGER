@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fotbalovydraft.PlayerController">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <VBox prefHeight="125.0" prefWidth="382.0">
+               <children>
+                  <Label text="Jmeno hráče:" />
+                  <Label prefHeight="85.0" prefWidth="137.0" text="Pozice:" />
+               </children>
+            </VBox>
+            <VBox prefHeight="98.0" prefWidth="399.0">
+               <children>
+                  <TextField fx:id="playerName" />
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <RadioButton fx:id="brankar" mnemonicParsing="false" text="Brankář" />
+                        <RadioButton fx:id="obrance" mnemonicParsing="false" text="Obránce" />
+                        <RadioButton fx:id="zaloznik" mnemonicParsing="false" text="Záložník" />
+                        <RadioButton fx:id="utocnik" mnemonicParsing="false" text="Útočník" />
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Label text="Hodnocení:" />
+      <Spinner fx:id="spinner" />
+      <VBox prefHeight="200.0" prefWidth="100.0" />
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#save" text="Uložit" />
+            <Button mnemonicParsing="false" onAction="#close" text="Zavřít" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
